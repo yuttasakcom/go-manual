@@ -7,7 +7,8 @@
  * `go version`
 
 #### Go set path variables
- * create Workspace at Home `mkdir Workspace`
+ * create Workspace at Home `mkdir -p Workspace/go`
  * `vi .profile`
- * > export GOPATH=$HOME/Workspace/go 
-   > export PATH=$HOME/Workspace/go:$PATH`
+   * export GOPATH=$HOME/Workspace/go
+   * export PATH=$HOME/Workspace/go:$PATH
+ * `go env`
