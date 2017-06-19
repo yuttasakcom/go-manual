@@ -1,4 +1,4 @@
-# Go programming on Ubuntu
+# การติดตั้ง Go บน Ubuntu
 
 #### การติดตั้ง
  * ทำการดาวน์โหลด : [https://golang.org/dl/](https://golang.org/dl/)
