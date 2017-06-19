@@ -1,14 +1,18 @@
-# Golang on Ubuntu
+# Go programming on Ubuntu
 
-#### SET UP
- * download : [https://golang.org/dl/](https://golang.org/dl/)
- * cd ~/Download run `sudo tar -C /usr/local -xzf go1.8.3.linux-amd64.tar.gz`
- * `sudo ln -s /usr/local/go/bin/go /usr/bin/go`
- * `go version`
+#### การติดตั้ง
+ * ทำการดาวน์โหลด : [https://golang.org/dl/](https://golang.org/dl/)
+ * เข้าไปที่โฟลเดอร์ Download แล้วพิมพ์คำสั่ง
+   `sudo tar -C /usr/local -xzf go1.8.3.linux-amd64.tar.gz`
+ * สร้างซิมลิงค์เรียก go พิมพ์คำสั่ง
+   `sudo ln -s /usr/local/go/bin/go /usr/bin/go`
+ * ตรวจสอบเวอร์ชั่น `go version`
 
-#### Go set path variables
- * create Workspace at Home `mkdir -p Workspace/go`
- * `vi .profile`
+#### การเซ็ต Path variables
+ * สร้างโฟลเดอร์ Workspace และโฟลเดอร์ go สำหรับเก็บโปรเจ็กต์
+   `mkdir -p Workspace/go`
+ * แก้ไขไฟล์ .profile ที่ directory Home พิมพ์คำสั่ง
+   `vi .profile`
    * export GOPATH=$HOME/Workspace/go
    * export PATH=$HOME/Workspace/go:$PATH
- * `go env`
+ * ตรวจสอบ Environment `go env`
