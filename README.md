@@ -15,5 +15,5 @@
  * แก้ไขไฟล์ .profile ที่ directory Home พิมพ์คำสั่ง
    `vi .profile`
    * export GOPATH=$HOME/Workspace/go
-   * export PATH=$HOME/Workspace/go:$PATH
+   * export PATH=$HOME/Workspace/go/bin:$PATH
  * ตรวจสอบ Environment `go env`
