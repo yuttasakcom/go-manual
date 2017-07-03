@@ -13,6 +13,8 @@
    `mkdir -p Workspace/go`
  * สร้างโฟลเดอร์ src, pkg, bin ใน Workspace/go 
  * แก้ไขไฟล์ .profile ที่ directory Home พิมพ์คำสั่ง
-   `vi .profile`
-   * export PATH=$HOME/Workspace/go/bin:$PATH
+   `vi .bashrc`
+    export GOPATH=$HOME/yo/Workspace/Back-End/go
+    export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+ * restart เครื่อง
  * ตรวจสอบ Environment `go env`
