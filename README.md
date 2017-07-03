@@ -17,5 +17,5 @@
    `vi .bashrc`<br>
     export GOPATH=$HOME/Workspace/Back-End/go<br>
     export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
- * restart เครื่อง
  * ตรวจสอบ Environment `go env`
+ * ถ้า env ไม่เปลี่ยนให้ restart เครื่อง
