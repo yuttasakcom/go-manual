@@ -12,7 +12,7 @@
  * สร้างโฟลเดอร์ Workspace และโฟลเดอร์ go สำหรับเก็บโปรเจ็กต์
    `mkdir -p Workspace/Back-End/go`
  * สร้างโฟลเดอร์ src, pkg, bin ใน Workspace/Back-End/go<br>
-   `cd Workspace/Back-End/go && mkdir src pkg bin` 
+   `mkdir Workspace/Back-End/go && cd Workspace/Back-End/go && mkdir src pkg bin` 
  * แก้ไขไฟล์ .bashrc ที่ directory Home พิมพ์คำสั่ง
    `vi .bashrc`<br>
     export GOPATH=$HOME/yo/Workspace/Back-End/go<br>
