@@ -2,7 +2,7 @@
 
 ## สารบัญ
 - บทที่ 1 
-  - [Install on Ubuntu](#install-ubuntu)
+  - [Install go on Ubuntu](#install-ubuntu)
 
 ## Install Ubuntu
  * Setup
