@@ -2,9 +2,9 @@
 
 ## สารบัญ
 - บทที่ 1 
-  - [Install go on Ubuntu](#install-ubuntu)
+  - [Install go on Ubuntu](#install-go-on-ubuntu)
 
-## Install Ubuntu
+## Install go on Ubuntu
  * Setup
    * ดาวน์โหลด go ตามลิงค์ [https://golang.org/dl/](https://golang.org/dl/)
    * เข้าไปที่โฟลเดอร์ Download แล้วพิมพ์คำสั่ง
