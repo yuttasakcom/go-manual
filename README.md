@@ -4,7 +4,7 @@
 - บทที่ 1 
   - [Install on Ubuntu](#install_ubuntu)
 
-## Install_Ubuntu
+## Install Ubuntu
  * Setup
    * ดาวน์โหลด go ตามลิงค์ [https://golang.org/dl/](https://golang.org/dl/)
    * เข้าไปที่โฟลเดอร์ Download แล้วพิมพ์คำสั่ง
