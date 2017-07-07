@@ -19,6 +19,6 @@ func main() {
 	fmt.Printf("%s\n", nickName)
 
 	trick := "Comment Print"
-	// fmt.Println(trick)
+	//fmt.Println(trick)
 	_ = trick
 }
