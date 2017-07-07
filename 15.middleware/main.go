@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"time"
 )
 
 func main() {
@@ -15,7 +16,10 @@ func main() {
 func logger(h http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		log.Printf("request: %s, path: %s, query: %s\n", r.RequestURI, r.URL.Path, r.URL.Query())
+		t := time.Now()
 		h.ServeHTTP(w, r)
+		diff := time.Now().Sub(t)
+		log.Printf("path: %s, time: %dus", r.URL.Path, diff/time.Microsecond)
 	})
 }
 
