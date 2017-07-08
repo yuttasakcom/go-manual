@@ -1,8 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
+	defer time.Sleep(time.Second)
 	workChan := make(chan string)
 	go worker(workChan)
 	workChan <- "Acoshift"
