@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	workChan := make(chan string)
 	go worker(workChan)
-	workChan <- "Yo"
+	workChan <- "Acoshift"
 	workChan <- "Hacker"
 }
 

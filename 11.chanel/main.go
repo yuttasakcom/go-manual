@@ -11,13 +11,16 @@ var (
 )
 
 func main() {
+	//withoutGo()
 	withGo()
 }
 
 func withGo() {
 	defer timer()()
+
 	chRes1 := make(chan int)
 	chRes2 := make(chan int)
+
 	go func() {
 		chRes1 <- sum(arr1)
 	}()
@@ -26,14 +29,14 @@ func withGo() {
 		chRes2 <- sum(arr2)
 	}()
 
-	fmt.Println("sum arr1:", <-chRes1)
-	fmt.Println("sum arr2:", <-chRes2)
+	fmt.Println("arr1:", <-chRes1)
+	fmt.Println("arr2:", <-chRes2)
 }
 
 func withoutGo() {
 	defer timer()()
-	fmt.Println("sum arr1:", sum(arr1))
-	fmt.Println("sum arr2:", sum(arr2))
+	fmt.Println("arr1:", sum(arr1))
+	fmt.Println("arr2:", sum(arr2))
 }
 
 func timer() func() {
