@@ -46,7 +46,7 @@ func main() {
 	m["name"] = "Gopher"
 	q := person{"TT"}
 	m[q] = "YoProgrammer"
-	fmt.Println(m[q])
+	fmt.Println(m)
 
 	if x, ok := m["name"].(string); ok {
 		fmt.Println(x)
