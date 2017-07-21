@@ -3,18 +3,20 @@ Golang 101 for beginners
 > การเรียนรู้การเขียนโปรแกรมด้วยภาษา Go (สำหรับผู้เริ่มต้น)
 
 ## Table of contents
-- Lession 1
+- Lession 1 Introduction
   - [Why Go](#why-go)
   - [Installing Go](#install-go)
     - [Mac](#mac)
     - [Windows](#windows)
     - [Linux Ubuntu](#ubuntu)
+  - Workspaces
+  - How to Write Go Code?
 
 ## Why Go
 - Go is a powerful statically typed programming language, that is both simple and fun<br>
   > Go เป็นภาษาการเขียนโปรแกรมที่มีประสิทธิภาพแบบสแตติกซึ่งง่ายและสนุก
 - Open Source — https://github.com/golang/go<br>
-  > เป็นโอเพ่นซอร์สสามารถนำไปพัฒนาต่อยอดใช้งานได้โดยไม่มีค่าใช้จ่าย ลิงค์ซอร์สโค้ด https://github.com/golang/go
+  > เป็นโครงการโอเพ่นซอร์สสามารถนำไปใช้งาน หรือพัฒนาต่อยอดได้โดยไม่มีค่าใช้จ่าย ลิงค์ซอร์สโค้ด https://github.com/golang/go
 - Fast — Learn, Dev, Compile, Deploy, Run<br>
   > ใช้เวลาเรียนรู้เรื่องไวยากรณ์(syntext)ช่วงแรก หลังจากนั้นทุกอย่างจะเร็วขึ้น Dev, Compile, Deploy, Run
 - Designed for Modern Hardware<br>
@@ -63,3 +65,13 @@ Windows — C:\> choco install golang
      export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
    * ตรวจสอบ Environment `go env`
    * ถ้า env ไม่เปลี่ยนให้ restart เครื่อง
+## Workspaces
+- src folder: where all your source code will reside
+  > โปรเจ็กต์ซอร์สโค้ดทั้งหมดจะถูกเก็บไว้ที่นี่
+  ตัวอย่าง
+  ```
+  src/
+    github.com/yuttasakcom/go101/
+  ```
+- pkg folder: destination folder for package objects
+- bin folder: where your built executables will reside
