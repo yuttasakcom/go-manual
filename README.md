@@ -5,7 +5,7 @@ Golang 101 for beginners
 ## Table of contents
 - Lession 1
   - [Why Go](#why-go)
-  - Installing Go(#install-go)
+  - [Installing Go](#install-go)
     - [Mac](#mac)
     - [Windows](#windows)
     - [Linux Ubuntu](#ubuntu)
