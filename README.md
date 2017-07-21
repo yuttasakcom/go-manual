@@ -5,7 +5,7 @@ Golang 101 for beginners
 ## Table of contents
 - Lession 1
   - [Why Go](#why-go)
-  - Installing Go
+  - Installing Go(#install-go)
     - [Mac](#mac)
     - [Windows](#windows)
     - [Linux Ubuntu](#ubuntu)
@@ -37,6 +37,8 @@ Golang 101 for beginners
 - From web services to encryptions to serialization formats, all what you need to build modern software, all open source
   > ตั้งแต่การทำเว็บเซอร์วิสไปจนถึงรูปแบบการเข้ารหัสต่างๆ ทั้งหมดที่คุณต้องการถูกสร้างด้วยแนวคิดการสร้างซอฟต์แวร์สมัยใหม่ และเป็นโอเพ่นซอร์ส
 
+## Install Go
+[Link download](https://golang.org/dl/)<br>
 ## Mac
 Mac — $ brew install go
 ## Windows
