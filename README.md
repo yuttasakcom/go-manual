@@ -2,7 +2,7 @@
 Golang 101 for beginners
 > การเรียนรู้การเขียนโปรแกรมด้วยภาษา Go (สำหรับผู้เริ่มต้น)
 
-## สารบัญ (Table of content)
+## Table of contents
 - Lession 1
   - [Why Go](#why-go)
   - Installing Go
