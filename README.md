@@ -26,6 +26,16 @@ Golang 101 for beginners
   > Go แปลซอร์สโค้ดเป็น native ไบนารี่ให้ทำงานอยู่บนระบบฏิบัติการของเรา
 - Your program becomes deployable the moment it builds, no VMs required<br>
   > โปรแกรมสามารถใช้งานได้ทันทีที่สร้างขึ้น โดยไม่จำเป็นต้องมีเครื่องจำลองการทำงาน
+- Go is truly cross platform
+  > Go เป็นการทำงานแบบข้ามแพลตฟอร์มอย่างแท้จริง
+- Write code once, deploy anywhere
+  > เขียนโค้ดเพียงครั้งเดียวใช้งานได้ทุกที่
+- Go is garbage collected
+  > Go จัดการทรัพยากร(ขยะ)ที่ไม่ถูกใช้งานในระบบให้
+- Go has an awesome standard library
+  > Go มีไลบารี่มาตราฐานรองรับการทำงานที่หลากหลาย
+- From web services to encryptions to serialization formats, all what you need to build modern software, all open source
+  > ตั้งแต่การทำเว็บเซอร์วิสไปจนถึงรูปแบบการเข้ารหัสต่างๆ ทั้งหมดที่คุณต้องการถูกสร้างด้วยแนวคิดการสร้างซอฟต์แวร์สมัยใหม่ และเป็นโอเพ่นซอร์ส
 
 ## Mac
 Mac — $ brew install go
