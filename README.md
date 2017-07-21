@@ -3,9 +3,12 @@ Golang 101 for beginners
 > การเรียนรู้การเขียนโปรแกรมด้วยภาษา Go (สำหรับผู้เริ่มต้น)
 
 ## สารบัญ (Table of content)
-- บทที่ 1 (Lession 1)
-  - ทำไมต้อง Go [Why Go](#why-go)
-  - การติดตั้ง Go (Installing Go)
+- Lession 1
+  > บทที่ 1
+  - [Why Go](#why-go)
+  > ทำไมต้องเรียนรู้ Go
+  - Installing Go
+  > การติตตั้ง Go
     - [Mac](#mac)
     - [Windows](#windows)
     - [Linux Ubuntu](#ubuntu)
