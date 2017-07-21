@@ -5,8 +5,7 @@ Golang 101 for beginners
 ## สารบัญ (Table of content)
 - บทที่ 1 (Lession 1)
   - ทำไมต้อง Go [Why Go](#why-go)
-  - 
-  - ติดตั้ง Go (Installing Go)
+  - การติดตั้ง Go (Installing Go)
     - [Mac](#mac)
     - [Windows](#windows)
     - [Linux Ubuntu](#ubuntu)
