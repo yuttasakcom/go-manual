@@ -3,15 +3,26 @@ Golang 101 for beginners
 > การเรียนรู้การเขียนโปรแกรมด้วยภาษา Go (สำหรับผู้เริ่มต้น)
 
 ## Table of contents
-- Lession 1 Introduction
+- Section 1 Introduction
   - [Why Go](#why-go)
   - [Installing Go](#install-go)
     - [Mac](#mac)
     - [Windows](#windows)
     - [Linux Ubuntu](#ubuntu)
-  - Workspaces
   - How to Write Go Code?
-
+    - [Workspace](#workspace)
+    - [Hello World](#hello-world)
+    - [Let's Build a Rest API Client in Go!](#build)
+- Section 2 Key Building Blocks
+  - Packages
+  - Variables
+  - Functions
+  - Flow Control
+  - Applying Your New Knowledge-Binary Search Algorithm
+  - Structs
+  - Slices
+  - Map
+  - Applying Your New Knowledge - Let's Create a Set
 ## Why Go
 - Go is a powerful statically typed programming language, that is both simple and fun<br>
   > Go เป็นภาษาการเขียนโปรแกรมที่มีประสิทธิภาพแบบสแตติกซึ่งง่ายและสนุก
@@ -75,3 +86,4 @@ Windows — C:\> choco install golang
   ```
 - pkg folder: destination folder for package objects
 - bin folder: where your built executables will reside
+## Build

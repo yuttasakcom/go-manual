@@ -1,19 +1,20 @@
 package main
 
 import (
-	"net/http"
 	"fmt"
 	"io/ioutil"
+	"net/http"
 )
 
 func main() {
-	response, err := http.Get("http://api.theysaidso.com/qod")
-	if err!= nil {
+	res, err := http.Get("http://quotes.rest/qod.json")
+	if err != nil {
 		fmt.Println(err)
 		return
 	}
-	defer response.Body.Close()
-	contents, err := ioutil.ReadAll(response.Body)
+	defer res.Body.Close()
+
+	contents, err := ioutil.ReadAll(res.Body)
 	if err != nil {
 		fmt.Println(err)
 		return
