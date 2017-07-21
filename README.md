@@ -68,7 +68,7 @@ Windows — C:\> choco install golang
 ## Workspaces
 - src folder: where all your source code will reside
   > โปรเจ็กต์ซอร์สโค้ดทั้งหมดจะถูกเก็บไว้ที่นี่
-  ตัวอย่าง
+  <br>ตัวอย่าง เช่น
   ```
   src/
     github.com/yuttasakcom/go101/
