@@ -21,7 +21,7 @@ Golang 101 for beginners
   > เป็นภาษาที่ถูกออกแบบมาให้ทำงานได้ดีกับฮาร์ดแวร์สมัยใหม่
 - Go supports concurrency out of the box (goroutines, channels, select)<br>
   Just add the word "go" and your function runs concurrently<br>
-  > รองรับ "การร้องขอเข้าใช้งานทรัพยากรพร้อมกัน" แบบแยกโปรเซสการทำงานได้หลายโปรเซส เพียงแค่พิมพ์คำว่า "go" หน้าฟังก์ชั่นที่ต้องการรัน concurrently
+  > รองรับ "การร้องขอเข้าใช้งานทรัพยากรพร้อมกัน" แบบแยกโปรเซสการทำงานได้หลายโปรเซส เพียงแค่พิมพ์คำว่า "go" หน้าฟังก์ชั่นที่ต้องการรันแบบควบคู่กันไป
 - Go produces executable binaries that are native to your O.S<br>
   > Go แปลซอร์สโค้ดเป็น native ไบนารี่ให้ทำงานอยู่บนระบบฏิบัติการของเรา
 - Your program becomes deployable the moment it builds, no VMs required<br>
