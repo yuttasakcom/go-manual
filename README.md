@@ -1,6 +1,6 @@
 ## Go 101
-Golang 101 for beginners
-> การเรียนรู้การเขียนโปรแกรมด้วยภาษา Go (สำหรับผู้เริ่มต้น)
+Go Programming for beginners
+> การเขียนโปรแกรมด้วยภาษา Go (สำหรับผู้เริ่มต้น)
 
 ## Table of contents
 - Section 1 Introduction
