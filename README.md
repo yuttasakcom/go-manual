@@ -1,6 +1,5 @@
-## Go 101
-Go Programming for beginners
-> การเขียนโปรแกรมด้วยภาษา Go (สำหรับผู้เริ่มต้น)
+## Go Manual
+> คู่มือการใช้งาน Go ฉบับ YoProgrammer
 
 ## Table of contents
 - Section 1 Introduction
