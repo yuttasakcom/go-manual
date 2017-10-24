@@ -50,11 +50,15 @@
   > ตั้งแต่การทำเว็บเซอร์วิสไปจนถึงรูปแบบการเข้ารหัสต่างๆ ทั้งหมดที่คุณต้องการถูกสร้างด้วยแนวคิดการสร้างซอฟต์แวร์สมัยใหม่ และเป็นโอเพ่นซอร์ส
 
 ## Install Go
-[Link download](https://golang.org/dl/)<br>
+[Link download](https://golang.org/dl/)
+
 ## Mac
 Mac — $ brew install go
+
 ## Windows
-Windows — C:\> choco install golang
+ดาวน์โหลด https://golang.org/dl/ <br>
+install && restart
+
 ## Ubuntu
  * Setup
    * ดาวน์โหลด go ตามลิงค์ [https://golang.org/dl/](https://golang.org/dl/)
