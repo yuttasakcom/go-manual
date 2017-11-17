@@ -1,5 +1,5 @@
-## Go Manual
-> คู่มือการใช้งาน Go ฉบับ YoProgrammer
+﻿## Go Manual
+> คู่มือการใช้งาน Go
 
 ## Table of contents
 - Section 1 Introduction
