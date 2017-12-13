@@ -2,7 +2,11 @@ package main
 
 import "fmt"
 
-var ligthSwitchIsOn bool = false
+var lightSwitchIsOn bool
+
+func init() {
+	lightSwitchIsOn = false
+}
 
 func main() {
 	printLightSwitchState()
@@ -15,9 +19,9 @@ func main() {
 }
 
 func printLightSwitchState() {
-	fmt.Println("The light switch is off:", ligthSwitchIsOn)
+	fmt.Println("The light switch is off:", lightSwitchIsOn)
 }
 
 func toggleLightSwitch() {
-	ligthSwitchIsOn = !ligthSwitchIsOn
+	lightSwitchIsOn = !lightSwitchIsOn
 }
