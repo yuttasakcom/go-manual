@@ -101,10 +101,8 @@
 * ตรวจสอบ Environment
 
 ```bash
-  go env
+  go env # ถ้า env path ยังไม่เปลี่ยนให้ restart เครื่อง
 ```
-
-* ถ้า env ไม่เปลี่ยนให้ restart เครื่อง
 
 #### Workspaces
 
