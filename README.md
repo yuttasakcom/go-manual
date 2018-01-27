@@ -2,17 +2,15 @@
 
 ## Table of Contents
 
-* Introduction
+* Section 1
+
   * [Why](#why)
   * [Installing](#installing)
     * [Ubuntu](#ubuntu)
-  * How to Write Go Code?
-    * [Workspace](#workspace)
-    * [Hello World](#hello-world)
-    * [Let's Build a Rest API Client in Go!](#build)
-* Section 2 Key Building Blocks
 
-  * Packages
+* Section 2
+
+  * [ทำความเข้าใจเรื่อง Package](#package)
   * Variables
   * Functions
   * Flow Control
