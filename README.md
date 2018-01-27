@@ -4,24 +4,31 @@
 
 ## Table of Contents
 
-* Section 1
+* Section 1 Welcome!
 
   * [Introduce](#introduce)
   * [Why](#why)
   * [Installing](#installing)
     * [Ubuntu](#ubuntu)
 
-* Section 2
+* Section 2 Basics
 
-  * [ทำความเข้าใจเรื่อง Package](#package)
-  * [ตัวแปร](#variables)
-  * Functions
-  * Flow Control
-  * Applying Your New Knowledge-Binary Search Algorithm
-  * Structs
-  * Slices
-  * Map
-  * Applying Your New Knowledge - Let's Create a Set
+  * [Package](#package)
+  * [Variables](#variables)
+  * [Functions](#Functions)
+  * [Flow Control statements](#flow-control-statements)
+    * [For](#for)
+    * [If](#if)
+    * [Else](#else)
+    * [Switch](#switch)
+    * [Defer](#defer)
+  * [More types](#more-types)
+    * [Structs](#structs)
+    * [Slices](#slices)
+    * [Map](#map)
+  * [Methods](#methods)
+  * [Interfaces](#interfaces)
+  * [Concurrency](#concurrency)
 
 ## Introduce
 
@@ -119,3 +126,35 @@
     |_yuttasakcom
       |_go-sample
 ```
+
+## Package
+
+## Variables
+
+## Functions
+
+## Flow Control statements
+
+### For
+
+### If
+
+### Else
+
+### Switch
+
+### Defer
+
+## More types
+
+### Structs
+
+### Slices
+
+### Map
+
+## Methods
+
+## Interfaces
+
+## Concurrency
