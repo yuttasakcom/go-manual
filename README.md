@@ -112,7 +112,7 @@
 - bin # where your built executables will reside
 - pkg # destination folder for package objects
 - src
-| |_github.com
-|   |_yuttasakcom
-|     |_go-sample
+  |_github.com
+    |_yuttasakcom
+      |_go-sample
 ```
