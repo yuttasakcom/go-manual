@@ -1,5 +1,7 @@
 ﻿# Go Manual
 
+> https://golang.org/doc/
+
 ## Table of Contents
 
 * Section 1
