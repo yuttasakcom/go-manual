@@ -4,6 +4,7 @@
 
 * Section 1
 
+  * [Introduce](#introduce)
   * [Why](#why)
   * [Installing](#installing)
     * [Ubuntu](#ubuntu)
@@ -11,7 +12,7 @@
 * Section 2
 
   * [ทำความเข้าใจเรื่อง Package](#package)
-  * Variables
+  * [ตัวแปร](#variables)
   * Functions
   * Flow Control
   * Applying Your New Knowledge-Binary Search Algorithm
@@ -19,6 +20,10 @@
   * Slices
   * Map
   * Applying Your New Knowledge - Let's Create a Set
+
+## Introduce
+
+> Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
 
 ## Why
 
