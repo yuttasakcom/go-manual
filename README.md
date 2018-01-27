@@ -1,7 +1,5 @@
 ﻿# Go Manual
 
-> คู่มือ Go
-
 ## Table of Contents
 
 * Introduction
@@ -57,7 +55,7 @@
 * เข้าไปที่โฟลเดอร์ Download แล้วพิมพ์คำสั่ง
 
 ```bash
-  sudo tar -C /usr/local -xzf go1.9.3.linux-amd64.tar.gz
+  cd Download && sudo tar -C /usr/local -xzf go1.9.3.linux-amd64.tar.gz
 ```
 
 * สร้างซิมลิงค์สำหรับเรียก go พิมพ์คำสั่ง
@@ -111,11 +109,10 @@
 #### Workspaces
 
 ```
+- bin # where your built executables will reside
+- pkg # destination folder for package objects
 - src
 | |_github.com
 |   |_yuttasakcom
 |     |_go-sample
 ```
-
-* pkg folder: destination folder for package objects
-* bin folder: where your built executables will reside
