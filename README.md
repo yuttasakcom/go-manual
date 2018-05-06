@@ -4,7 +4,7 @@
 
 ## Table of Contents
 
-* Section 1 Welcome!
+* Getting Started
 
   * [Introduce](#introduce)
   * [Why](#why)
@@ -13,22 +13,60 @@
 
 * Section 2 Basics
 
-  * [Package](#package)
+  * [Types](#types)
+    * [Numbers](#numbers)
+    * [Strings](#strings)
+    * [Booleans](#booleans)
   * [Variables](#variables)
-  * [Functions](#Functions)
-  * [Flow Control statements](#flow-control-statements)
-    * [For](#for)
-    * [If](#if)
-    * [Else](#else)
-    * [Switch](#switch)
-    * [Defer](#defer)
-  * [More types](#more-types)
-    * [Structs](#structs)
-    * [Slices](#slices)
-    * [Map](#map)
-  * [Methods](#methods)
-  * [Interfaces](#interfaces)
-  * [Concurrency](#concurrency)
+    * How to Name a Variable
+    * Scope
+    * Constants
+    * Defining Multiple Variables
+    * An Example Program
+  * [Control Structures]
+    * For
+    * If
+    * Switch
+  * Arrays, Slices and Maps
+    * Arrays
+      * len
+    * Slices
+      * make
+    * Maps
+  * Functions
+    * Your Second Function
+    * Returning Multiple Values
+    * Variadic Functions
+    * Closure
+    * Recursion
+    * Defer, Panic & Recover
+  * Pointers
+    * The \* and & operators
+    * new
+  * Structs and Interfaces
+    * Structs
+    * Methods
+    * Interfaces
+  * Concurrency
+    * Goroutines
+    * Channels
+  * Packages
+    * Creating Packages
+    * Documentation
+  * Testing
+  * The Core Packages
+    * Strings
+    * Input / Output
+    * Files & Folders
+    * Errors
+    * Containers & Sort
+    * Hashes & Cryptography
+    * Servers
+    * Parsing Command Line Arguments
+    * Synchronization Primitives
+
+* Books
+  * [An introduction to programming in Go](https://www.golang-book.com/books/intro)
 
 ## Introduce
 
@@ -126,35 +164,3 @@
     |_yuttasakcom
       |_go-sample
 ```
-
-## Package
-
-## Variables
-
-## Functions
-
-## Flow Control statements
-
-### For
-
-### If
-
-### Else
-
-### Switch
-
-### Defer
-
-## More types
-
-### Structs
-
-### Slices
-
-### Map
-
-## Methods
-
-## Interfaces
-
-## Concurrency
