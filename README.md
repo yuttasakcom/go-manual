@@ -101,17 +101,10 @@
 
 #### Setup
 
-- ดาวน์โหลด go ตามลิงค์ [https://golang.org/dl/](https://golang.org/dl/)
-- เข้าไปที่โฟลเดอร์ Download แล้วพิมพ์คำสั่ง
-
 ```bash
-  cd Download && sudo tar -C /usr/local -xzf go1.9.3.linux-amd64.tar.gz
-```
-
-- สร้างซิมลิงค์สำหรับเรียก go พิมพ์คำสั่ง
-
-```bash
-  sudo ln -s /usr/local/go/bin/go /usr/bin/go
+$ cd Downloads && wget https://dl.google.com/go/go1.11.2.linux-amd64.tar.gz
+$ sudo tar -C /usr/local -xzf go1.11.2.linux-amd64.tar.gz
+$ sudo ln -s /usr/local/go/bin/go /usr/bin/go
 ```
 
 - ตรวจสอบเวอร์ชั่น
@@ -141,7 +134,7 @@
   vi .bashrc
 
   # append variable
-  export GOPATH=$HOME/Workspace/Back-End/go
+  export GOPATH=$HOME/go
   export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
   # update .bashrc
@@ -152,15 +145,4 @@
 
 ```bash
   go env # ถ้า env path ยังไม่เปลี่ยนให้ restart เครื่อง
-```
-
-#### Workspaces
-
-```
-- bin # where your built executables will reside
-- pkg # destination folder for package objects
-- src
-  |_github.com
-    |_yuttasakcom
-      |_go-sample
 ```
