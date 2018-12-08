@@ -1,6 +1,6 @@
 ﻿# คู่มือการเรียนรู้ Golang ฉบับผู้เริ่มต้น
 
-> สามารถอ่านเอกสารเพิ่มเติมได้ที่ https://golang.org/doc/
+> สามารถอ่านเอกสารเพิ่มเติมได้ที่ <a href="https://golang.org/doc/" target="_blank">https://golang.org/doc/</a>
 
 ## Table of Contents
 
