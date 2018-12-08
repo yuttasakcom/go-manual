@@ -11,7 +11,7 @@
   - [Installing](#installing)
     - [Ubuntu](#ubuntu)
 
-- Section 2 Basics
+- Golang Basics
 
   - [Types](#types)
     - [Numbers](#numbers)
