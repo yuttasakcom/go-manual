@@ -329,3 +329,17 @@ func main() {
 }
 
 ```
+
+### json NewDecoder, NewEncoder
+
+```go
+users := Users{}
+	jsonDecode := json.NewDecoder(resp.Body)
+	jsonDecode.Decode(&users)
+	resp.Body.Close()
+
+	users[0].Name = "Yuttasak Pannawat"
+
+	jsonEncoder := json.NewEncoder(os.Stdout)
+	jsonEncoder.Encode(users)
+```
