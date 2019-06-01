@@ -10,13 +10,32 @@
   - [Why](#why)
   - [Installing](#installing)
     - [Ubuntu](#ubuntu)
+    - [MacOS](#macos)
 
 - Golang Basics
 
   - [Types](#types)
-    - [Numbers](#numbers)
-    - [Strings](#strings)
-    - [Booleans](#booleans)
+    - [Basic]
+      - [Numbers](#numbers)
+      - [Strings](#strings)
+        - [byte]
+        - [character]
+        - [rune]
+        - [unicode]
+        - [utf-8]
+        - [string literal]
+      - [Booleans](#booleans)
+    - [Aggregate]
+      - [Arrays]
+      - [Structs]
+    - [Referance]
+      - [Pointers]
+      - [Slices]
+      - [Maps]
+      - [Functions]
+      - [Channels]
+    - [Interface]
+      - [Interfaces]
   - [Variables](#variables)
     - How to Name a Variable
     - Scope
@@ -145,4 +164,60 @@ $ sudo ln -s /usr/local/go/bin/go /usr/bin/go
 
 ```bash
   go env # ถ้า env path ยังไม่เปลี่ยนให้ restart เครื่อง
+```
+
+### Numbers
+
+```
+int เป็น 2's Complement
+2's Complement หาได้จาก (1's Complement + 1)
+
+0000 0001 // เลขฐาน 2 มีค่าเท่ากับ 1
+1111 1110 // เลขฐาน 2 แบบ 1's Complement มีค่าเท่ากับ -1
+1111 1111 // เลขฐาน 2 แบบ 2's Complement มีค่าเท่ากับ -1 หาได้จากเอา (1's Complement + 1)
+```
+
+```go
+fmt.Println(math.MinInt8, math.MaxInt8)
+fmt.Println(math.MaxUint8)
+```
+
+| Precedence | Operators         |
+| ---------- | ----------------- |
+| 5          | \* / % << >> & &^ |
+| 4          | + - ^ \|          |
+| 3          | = != < <= > >=    |
+| 2          | &&                |
+| 1          | \|\|              |
+
+### Strings
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	x := "สวัสดี"
+	y := []byte{0xe0, 0xb8, 0xaa, 0xe0, 0xb8, 0xa7, 0xe0, 0xb8, 0xb1, 0xe0, 0xb8, 0xaa, 0xe0, 0xb8, 0x94, 0xe0, 0xb8, 0xb5}
+	z := []rune(x)
+
+	for i := 0; i < len(x); i++ {
+		fmt.Printf("0x%x,", x[i])
+	}
+
+	fmt.Println("")
+	fmt.Println(x, len(x))
+	fmt.Println(x, len(y))
+	fmt.Println(x, len(z))
+
+	fmt.Println("\xe0\xb8\xaa")
+	fmt.Println("\xe0\xb8\xa7")
+	fmt.Println(string(y[6:9]))
+	fmt.Println(string(y[:3]))
+	fmt.Printf("%q", z[4])
+	fmt.Printf("%q", z[5])
+
+}
+
 ```
