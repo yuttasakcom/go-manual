@@ -36,29 +36,15 @@
       - [Channels]
     - [Interface]
       - [Interfaces]
-  - [Variables](#variables)
-    - How to Name a Variable
-    - Scope
-    - Constants
-    - Defining Multiple Variables
-    - An Example Program
-  - [Control Structures]
-    - For
-    - If
-    - Switch
-  - Arrays, Slices and Maps
-    - Arrays
-      - len
-    - Slices
-      - make
-    - Maps
-  - Functions
-    - Your Second Function
-    - Returning Multiple Values
-    - Variadic Functions
+  - [Functions]
+    - [Context of Function]
+    - [Recursion]
     - Closure
-    - Recursion
-    - Defer, Panic & Recover
+    - Variadic Functions
+  - [Errors]
+    - [Error Propagation](#error-propagation)
+    - Panic
+    - Recover
   - Pointers
     - The \* and & operators
     - new
@@ -77,7 +63,6 @@
     - Strings
     - Input / Output
     - Files & Folders
-    - Errors
     - Containers & Sort
     - Hashes & Cryptography
     - Servers
@@ -342,4 +327,53 @@ users := Users{}
 
 	jsonEncoder := json.NewEncoder(os.Stdout)
 	jsonEncoder.Encode(users)
+```
+
+## Error Propagation
+
+```go
+package main
+
+import (
+	"errors"
+	"fmt"
+	"log"
+)
+
+const dbConnection = false
+const balance = 500
+
+func getBalance() (int, error) {
+	if !dbConnection {
+		return 0, errors.New("getBalance: database is down")
+	}
+
+	return balance, nil
+}
+
+func withdraw(a int) (int, error) {
+	b, err := getBalance()
+
+	if err != nil {
+		return 0, fmt.Errorf("withdraw: %v", err)
+	}
+
+	if a > b {
+		return 0, errors.New("withdraw: insufficient fund")
+	}
+
+	return b - a, nil
+}
+
+func main() {
+	// log.SetFlags(0)
+	amount, err := withdraw(200)
+
+	if err != nil {
+		log.Fatalf("main: %v", err)
+	}
+
+	fmt.Println("Please collect your money: ", amount)
+}
+
 ```
