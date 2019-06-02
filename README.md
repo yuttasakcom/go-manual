@@ -340,7 +340,7 @@ import (
 	"log"
 )
 
-const dbConnection = false
+const dbConnection = true
 const balance = 500
 
 func getBalance() (int, error) {
@@ -362,7 +362,7 @@ func withdraw(a int) (int, error) {
 		return 0, errors.New("withdraw: insufficient fund")
 	}
 
-	return b - a, nil
+	return (b - a), nil
 }
 
 func main() {
