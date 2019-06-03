@@ -2,10 +2,22 @@
 
 ## Table of Contents
 
-- Type
+- Data Types
   - Basic
-    - Numeric
-    - String
+    - Numbers
+    - Strings
+    - Booleans
+  - Aggregate
+    - Arrays
+    - Structs
+  - Reference
+    - Pointers
+    - Slices
+    - Maps
+    - Functions
+    - Channels
+  - Interface
+    - Interfaces
 
 ## Numbers
 
