@@ -31,9 +31,9 @@ rune        alias for int32
 
 ในภาษา go type int จะเป็น 2's complement arithmetic.
 * หมายเหตุ
-	1's complement เป็นการหาสลับบิตค่าลบ จะเปลี่ยนบิต 0 เป็น 1 และเปลี่ยน 1 เป็น 0
-	ปัญหาของ 1's complement คือค่า -0 ไม่มีในทางคณิตศาสตร์
-	2's complement เป็นการนำ 1's complement มา + 1 เพื่อนเลื่อนบิตไปทางขวาทำให้ไม่มีค่า -0
+1's complement ในการหาค่าลบ จะสลับบิต 0 เป็น 1 และสลับบิต 1 เป็น 0
+ปัญหาของ 1's complement คือค่า -0 ไม่มีในทางคณิตศาสตร์
+2's complement เป็นการนำ 1's complement มา + 1 เพื่อนเลื่อนบิตไปทางขวาทำให้ไม่มีค่า -0
 
 ตัวอย่างการแปลง 1's complement ไปเป็น 2's complement
 เลขฐาน 2 จาก 0111 แปลงเป็น 1's complement จะได้ 1000 (เปลี่ยนบิต 1 เป็น 0, เปลี่ยนบิต 0 เป็น 1)
@@ -125,7 +125,7 @@ func main() {
 
 ```
 
-## json, ioutil, http
+## การใช้งาน JSON ร่วมกับ ioutil, http
 
 ```go
 package main
@@ -191,7 +191,7 @@ func main() {
 
 ```
 
-## json NewDecoder, NewEncoder
+## การใช้งาน JSON NewDecoder, JSON NewEncoder
 
 ```go
 users := Users{}
