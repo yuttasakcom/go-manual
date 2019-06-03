@@ -1,168 +1,50 @@
-﻿# คู่มือการเรียนรู้ Golang ฉบับผู้เริ่มต้น
-
-> สามารถอ่านเอกสารเพิ่มเติมได้ที่ <a href="https://golang.org/doc/" target="_blank">https://golang.org/doc/</a>
+﻿# Go Manual
 
 ## Table of Contents
 
-- Getting Started
+- Type
+  - Basic
+    - Numeric
+    - String
 
-  - [Introduce](#introduce)
-  - [Why](#why)
-  - [Installing](#installing)
-    - [Ubuntu](#ubuntu)
-    - [MacOS](#macos)
-
-- Golang Basics
-
-  - [Types](#types)
-    - [Basic]
-      - [Numbers](#numbers)
-      - [Strings](#strings)
-        - [byte]
-        - [character]
-        - [rune]
-        - [unicode]
-        - [utf-8]
-        - [string literal]
-      - [Booleans](#booleans)
-    - [Aggregate]
-      - [Arrays]
-      - [Structs]
-    - [Referance]
-      - [Pointers]
-      - [Slices]
-      - [Maps]
-      - [Functions]
-      - [Channels]
-    - [Interface]
-      - [Interfaces]
-  - [Functions]
-    - [Context of Function]
-    - [Recursion]
-    - Closure
-    - Variadic Functions
-  - [Errors]
-    - [Error Propagation](#error-propagation)
-    - Panic
-    - Recover
-  - Pointers
-    - The \* and & operators
-    - new
-  - Structs and Interfaces
-    - Structs
-    - Methods
-    - Interfaces
-  - Concurrency
-    - Goroutines
-    - Channels
-  - Packages
-    - Creating Packages
-    - Documentation
-  - Testing
-  - The Core Packages
-    - Strings
-    - Input / Output
-    - Files & Folders
-    - Containers & Sort
-    - Hashes & Cryptography
-    - Servers
-    - Parsing Command Line Arguments
-    - Synchronization Primitives
-
-- Books
-  - [An introduction to programming in Go](https://www.golang-book.com/books/intro)
-
-## Introduce
-
-> Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
-
-## Why
-
-- Fast
-  > เร็วส์
-- Learning curve
-  > การเรียนรู้อยู่ในระดับปานกลาง ไม่ยาก ไม่ง่าย
-- Open Source
-  > โอเพ่นซอร์ส
-- Designed for Modern Hardware
-  > เป็นภาษาที่ถูกออกแบบมาให้ทำงานได้ดีกับฮาร์ดแวร์สมัยใหม่
-- Go supports concurrency out of the box (goroutines, channels, select)
-  > แยกโปรเซสการทำงานได้หลายโปรเซส เพียงแค่พิมพ์คำว่า "go" หน้าฟังก์ชั่นที่ต้องการ
-- Go produces executable binaries that are native to your O.S
-  > แปลงซอร์สโค้ดเป็น native ไบนารี่
-- Your program becomes deployable the moment it builds, no VMs required
-  > โปรแกรมสามารถใช้งานได้ทันทีที่สร้างขึ้น โดยไม่จำเป็นต้องมีเครื่องจำลองการทำงาน
-- Go is truly cross platform
-  > สามารถทำงานข้ามแพลตฟอร์ม
-- Go is garbage collected
-  > Go จัดการทรัพยากร(ขยะ)ที่ไม่ถูกใช้งานในระบบให้
-- Go has an awesome standard library
-  > Go มีไลบารี่มาตราฐานรองรับการทำงานที่หลากหลาย
-
-## Installing
-
-### Ubuntu
-
-#### Setup
-
-```bash
-$ cd Downloads && wget https://dl.google.com/go/go1.11.2.linux-amd64.tar.gz
-$ sudo tar -C /usr/local -xzf go1.11.2.linux-amd64.tar.gz
-$ sudo ln -s /usr/local/go/bin/go /usr/bin/go
-```
-
-- ตรวจสอบเวอร์ชั่น
-
-```bash
-  go version
-```
-
-#### Set path
-
-- สร้างโฟลเดอร์ go สำหรับเก็บโปรเจ็กต์
-
-```bash
-  mkdir -p go
-```
-
-- สร้างโฟลเดอร์ src, pkg, bin ใน โฟลเดอร์ go
-
-```bash
-  mkdir src pkg bin
-```
-
-- แก้ไขไฟล์ .bashrc ที่ directory Home พิมพ์คำสั่ง
-
-```bash
-  # open editor
-  vi .bashrc
-
-  # append variable
-  export GOPATH=$HOME/go
-  export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-
-  # update .bashrc
-  source .bashrc
-```
-
-- ตรวจสอบ Environment
-
-```bash
-  go env # ถ้า env path ยังไม่เปลี่ยนให้ restart เครื่อง
-```
-
-### Numbers
+## Numbers
 
 ```
-int เป็น 2's Complement
-2's Complement หาได้จาก (1's Complement + 1)
+uint8       the set of all unsigned  8-bit integers (0 to 255)
+uint16      the set of all unsigned 16-bit integers (0 to 65535)
+uint32      the set of all unsigned 32-bit integers (0 to 4294967295)
+uint64      the set of all unsigned 64-bit integers (0 to 18446744073709551615)
 
+int8        the set of all signed  8-bit integers (-128 to 127)
+int16       the set of all signed 16-bit integers (-32768 to 32767)
+int32       the set of all signed 32-bit integers (-2147483648 to 2147483647)
+int64       the set of all signed 64-bit integers (-9223372036854775808 to 9223372036854775807)
+
+float32     the set of all IEEE-754 32-bit floating-point numbers
+float64     the set of all IEEE-754 64-bit floating-point numbers
+
+complex64   the set of all complex numbers with float32 real and imaginary parts
+complex128  the set of all complex numbers with float64 real and imaginary parts
+
+byte        alias for uint8
+rune        alias for int32
+
+ในภาษา go type int จะเป็น 2's complement arithmetic.
+* หมายเหตุ
+	1's complement เป็นการหาสลับบิตค่าลบ จะเปลี่ยนบิต 0 เป็น 1 และเปลี่ยน 1 เป็น 0
+	ปัญหาของ 1's complement คือค่า -0 ไม่มีในทางคณิตศาสตร์
+	2's complement เป็นการนำ 1's complement มา + 1 เพื่อนเลื่อนบิตไปทางขวาทำให้ไม่มีค่า -0
+
+ตัวอย่างการแปลง 1's complement ไปเป็น 2's complement
+เลขฐาน 2 จาก 0111 แปลงเป็น 1's complement จะได้ 1000 (เปลี่ยนบิต 1 เป็น 0, เปลี่ยนบิต 0 เป็น 1)
+แล้ว 1000 1's complement แปลงเป็น 2's complement จะได้ 1001 (1'complement + 1)
+
+ตัวอย่างการหาค่า 1 และ -1
 0000 0001 // เลขฐาน 2 มีค่าเท่ากับ 1
 1111 1110 // เลขฐาน 2 แบบ 1's Complement มีค่าเท่ากับ -1
-1111 1111 // เลขฐาน 2 แบบ 2's Complement มีค่าเท่ากับ -1 หาได้จากเอา (1's Complement + 1)
-```
+1111 1111 // เลขฐาน 2 แบบ 2's Complement มีค่าเท่ากับ -1 (1's Complement + 1)
 
-```go
+ตัวอย่างการหาค่า Min, Max ของ Int และ Uint
 fmt.Println(math.MinInt8, math.MaxInt8)
 fmt.Println(math.MaxUint8)
 ```
@@ -175,7 +57,7 @@ fmt.Println(math.MaxUint8)
 | 2          | &&                |
 | 1          | \|\|              |
 
-### Strings
+## Strings
 
 ```go
 package main
@@ -207,7 +89,7 @@ func main() {
 
 ```
 
-### Json
+## Json
 
 ```go
 package main
@@ -229,9 +111,8 @@ type Person struct {
 
 func main() {
 	p := []Person{}
-	v := &p
 
-	json.Unmarshal([]byte(data), v)
+	json.Unmarshal([]byte(data), &p)
 
 	result, err := json.Marshal(p)
 
@@ -244,7 +125,7 @@ func main() {
 
 ```
 
-### json, ioutil, http
+## json, ioutil, http
 
 ```go
 package main
@@ -299,23 +180,18 @@ func main() {
 	}
 
 	users := Users{}
-
 	json.Unmarshal(body, &users)
-
 	users[0].Name = "Yuttasak Pannawat"
-
 	result, err := json.Marshal(users)
-
 	if err != nil {
 		return
 	}
-
 	fmt.Println(string(result))
 }
 
 ```
 
-### json NewDecoder, NewEncoder
+## json NewDecoder, NewEncoder
 
 ```go
 users := Users{}
