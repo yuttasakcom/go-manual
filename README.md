@@ -18,6 +18,7 @@
     - Channels
   - Interface
     - Interfaces
+- Go Modules
 
 ## Numbers
 
@@ -264,4 +265,23 @@ func main() {
 	fmt.Println("Please collect your money: ", amount)
 }
 
+```
+
+## Go Modules
+
+```bash
+// init
+go mod init github.com/yuttasakcom/go-manual
+
+// show all modules
+go list -m all
+
+// get module with version
+go get github.com/yuttasakcom/go-manual@v0.1.0
+
+// delete old version
+go mod tidy
+
+// check versions
+go list -m -version github.com/yuttasakcom/go-manual
 ```
