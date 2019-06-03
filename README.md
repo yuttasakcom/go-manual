@@ -283,5 +283,5 @@ go get github.com/yuttasakcom/go-manual@v0.1.0
 go mod tidy
 
 // check versions
-go list -m -version github.com/yuttasakcom/go-manual
+go list -m -versions gitlab.com/yuttasakyo/quote
 ```
