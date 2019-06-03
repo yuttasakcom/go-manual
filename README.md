@@ -276,12 +276,15 @@ go mod init github.com/yuttasakcom/go-manual
 // show all modules
 go list -m all
 
-// get module with version
-go get github.com/yuttasakcom/go-manual@v0.1.0
+// get module with version & downgrade version
+go get gitlab.com/yuttasakyo/quote@v0.1.0
 
 // delete old version
 go mod tidy
 
 // check versions
 go list -m -versions gitlab.com/yuttasakyo/quote
+
+// clean cache
+go clean -modcache
 ```
