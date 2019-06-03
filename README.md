@@ -274,7 +274,7 @@ func main() {
 go mod init github.com/yuttasakcom/go-manual
 
 // show all modules
-go list -m all
+go list -m all // or go list -m gitlab.com/yuttasakyo/quote
 
 // get module with version & downgrade version
 go get gitlab.com/yuttasakyo/quote@v0.1.0
