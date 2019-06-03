@@ -11,7 +11,7 @@ func TestHello(t *testing.T) {
 }
 
 func TestThHello(t *testing.T) {
-	want := "สวัสดี-Hello"
+	want := "สวัสดี-Hi There"
 
 	if got := ThHello(); got != want {
 		t.Errorf("ThHello() = %q, want: %q", got, want)
