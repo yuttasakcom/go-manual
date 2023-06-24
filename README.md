@@ -20,10 +20,14 @@
     - Interfaces
 - Go Modules
 
-## Note: ทำความเข้าใจก่อนเริ่มเขียน Go
+## Convention: ทำความเข้าใจก่อนเริ่มเขียน Go
 
-- ภาษา Go จะเริ่มบรรทัดแรกด้วย package
-- ภาษา Go สามารถประกาศตัวแปรแบบ short-hand ได้ e.g. name := "Yo" แต่ไม่สามารถประกาศเป็น Global ได้ ต้องประกาศเป็น var e.g. var NAME string = "Yo"
+- ภาษา Go จะเริ่มบรรทัดแรกด้วยการบอก package
+- ภาษา Go สามารถประกาศตัวแปรแบบ short-hand ได้ e.g. name := "Yo" แต่ไม่สามารถประกาศเป็น Global ได้ ต้องประกาศโดยการใช้ var e.g. var NAME string = "Yo"
+- Go เป็น statically typed
+- public function จะขึ้นต้นด้วยตัวอักษรตัวใหญ่ ถ้าขึ้นต้นด้วยตัวเล็กคือ private
+- Go alway pass by value, การส่งค่าไป function อื่น จะเป็นการ copy ไป
+- (x ...string) คือ variadic function ค่าจะเป็น slice, สามารถ apply variadic function ได้ เช่น sum(nums...)
 
 ## Numbers
 
@@ -45,7 +49,7 @@ complex64   the set of all complex numbers with float32 real and imaginary parts
 complex128  the set of all complex numbers with float64 real and imaginary parts
 
 byte        alias for uint8
-rune        alias for int32
+rune        alias for int32 รูนใช้แทนการประกาศตัวอักษร 1 ตัว ที่เก็บค่าได้มากกว่า char
 
 ในภาษา go type int จะเป็น 2's complement arithmetic.
 * หมายเหตุ
