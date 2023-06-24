@@ -20,6 +20,11 @@
     - Interfaces
 - Go Modules
 
+## Note: ทำความเข้าใจก่อนเริ่มเขียน Go
+
+- ภาษา Go จะเริ่มบรรทัดแรกด้วย package
+- ภาษา Go สามารถประกาศตัวแปรแบบ short-hand ได้ e.g. name := "Yo" แต่ไม่สามารถประกาศเป็น Global ได้ ต้องประกาศเป็น var e.g. var NAME string = "Yo"
+
 ## Numbers
 
 ```

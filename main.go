@@ -1,6 +1,8 @@
-package hello
+package main
 
 import (
+	"fmt"
+
 	"github.com/yuttasakcom/go-manual/eng"
 	"github.com/yuttasakcom/go-manual/th"
 )
@@ -13,4 +15,9 @@ func Hello() string {
 // ThHello : สวัสดี-Hello
 func ThHello() string {
 	return th.Greet()
+}
+
+func main() {
+	fmt.Println(Hello())
+	fmt.Println(ThHello())
 }
