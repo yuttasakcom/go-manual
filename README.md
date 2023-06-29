@@ -2,17 +2,17 @@
 
 ## Table of Contents
 
-- Data Types
+- Data Types (Primitive Type) คือ native type ของภาษา
   - Basic
     - Numbers
     - Strings
     - Booleans
   - Aggregate
-    - Arrays
+    - Arrays (Immutable)
     - Structs
   - Reference
     - Pointers
-    - Slices
+    - Slices (Mutable)
     - Maps
     - Functions
     - Channels
