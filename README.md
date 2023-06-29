@@ -22,12 +22,12 @@
 
 ## Convention: ทำความเข้าใจก่อนเริ่มเขียน Go
 
-- ภาษา Go จะเริ่มบรรทัดแรกด้วยการบอก package
-- ภาษา Go สามารถประกาศตัวแปรแบบ short-hand ได้ e.g. name := "Yo" แต่ไม่สามารถประกาศเป็น Global ได้ ต้องประกาศโดยการใช้ var e.g. var NAME string = "Yo"
+- ภาษา Go จะเริ่มบรรทัดแรกด้วยการประกาศ package(entrypoint) เพื่อบอกจุดเริ่มต้น ในภาษา Go package ที่บอกจุดเริ่มต้นคือ package main
+- ภาษา Go สามารถประกาศตัวแปรแบบ short-hand ได้ e.g. name := "Yo" แต่ไม่สามารถประกาศเป็น Global ได้ ต้องประกาศโดยการใช้ var e.g. var NAME string = "Yo" หรือถ้าเป็นการประกาศแบบ Immutable(เปลี่ยนแปลงค่าไม่ได้) จะใช้ const e.g. const NAME string = "Yo"
 - Go เป็น statically typed
 - public function จะขึ้นต้นด้วยตัวอักษรตัวใหญ่ ถ้าขึ้นต้นด้วยตัวเล็กคือ private
-- Go alway pass by value, การส่งค่าไป function อื่น จะเป็นการ copy ไป
-- (x ...string) คือ variadic function ค่าจะเป็น slice, สามารถ apply variadic function ได้ เช่น sum(nums...)
+- Go alway pass by value, การส่งค่าไป function อื่น จะเป็นการ copy value ไป ไม่ใช่ reference
+- (x ...string) คือ variadic function value จะเป็น slice, สามารถ apply variadic function ได้ เช่น sum(nums...)
 
 ## Numbers
 
