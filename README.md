@@ -12,7 +12,7 @@
     - Structs
   - Reference
     - Pointers
-    - Slices (Mutable)
+    - Slices (Mutable) องค์ประกอบมี type, len คือ จำนวนสมาชิกตั้งต้น, cap คือ capacity 
     - Maps
     - Functions
     - Channels
