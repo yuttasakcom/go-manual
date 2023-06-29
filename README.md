@@ -1,4 +1,11 @@
 ﻿# Go Manual
+```
+Robert Griesemer
+Rob Pike
+Ken Thompson
+
+บริษัท ต้องเลือกระหว่าง ภาษาที่มีประสิทธิภาพ vs ภาษาที่เขียนง่าย กำเนิดภาษา Go
+```
 
 ## Table of Contents
 
@@ -279,6 +286,7 @@ func main() {
 ## Go Modules
 
 ```bash
+go env
 // init
 go mod init github.com/yuttasakcom/go-manual
 
@@ -295,5 +303,6 @@ go mod tidy
 go list -m -versions gitlab.com/yuttasakyo/quote
 
 // clean cache
-go clean -modcache
+go clean --cache
+go clean --modcache
 ```
