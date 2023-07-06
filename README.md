@@ -1,4 +1,5 @@
 ﻿# Go Manual
+
 ```
 Robert Griesemer
 Rob Pike
@@ -9,7 +10,7 @@ Ken Thompson
 
 ## Table of Contents
 
-- Data Types (Primitive Type) คือ native type ของภาษา
+- Data Types
   - Basic
     - Numbers
     - Strings
@@ -19,7 +20,7 @@ Ken Thompson
     - Structs
   - Reference
     - Pointers
-    - Slices (Mutable) องค์ประกอบมี type, len คือ จำนวนสมาชิกตั้งต้น, cap คือ capacity 
+    - Slices (Mutable) องค์ประกอบมี type, len คือ จำนวนสมาชิกตั้งต้น, cap คือ capacity
     - Maps
     - Functions
     - Channels
